@@ -40,7 +40,7 @@ subbody{
 }
 .h3 {
     font-size: 2em;
-    margin-top: 0;
+    margin-top: 20PX;
 
 }
 .vl {
@@ -151,6 +151,16 @@ subbody{
     font-size: 1em;
 
 }
+.buttonlearnmore {
+    margin-top: 26px;
+    color: white;
+    background-color: transparent;
+    border: 5px solid #F0F0F2;
+    border-radius: 10px;
+    padding: 16px 32px;
+    font-family: Satoshi-Black;
+    font-size: 1em;   
+}
 .buttoncontact2 {
     float: right;
     margin: 2%;
@@ -177,6 +187,27 @@ subbody{
     display: block;
     background-color: #B5CBD9;
     border-radius: 10px 0px 0px 10px;
+  }
+  .column2 {
+    float: left;
+    flex: 33%;
+    display: block;
+    margin: 26px;
+  }
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #B5CBD9;
+    height: 600px;
+  }
+  .icon {
+    width: 200px;
+    margin: 26px;
+  }
+  .tall {
+    height: 172px;
   }
   .imgright {
     flex: 50%;
