@@ -5,23 +5,43 @@
 
 body{
     min-height: 100vh;
+    background-color: #F0F0F2;
 }
 subbody{
     max-width: 1000px;
 }
-hr{
+.hr{
     display: block;
-    height: 1px;
+    height: 2px;
     border: 0;
-    border-top: 2.5px solid #f00;
+    border-top: 2.5px solid #8B2F26;
     margin: 1em 0;
     padding: 0;
+    width: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dividerline {
+
 }
 .divide{
     display: none;
 }
 .divide2{
     height: 1%;
+}
+.h2 {
+        /* font-weight: 800; */
+        font-size: 3em;
+        text-align: center;
+        margin: 40px;
+        color: #B5CBD9;
+        font-family: 'satoshi-bold';
+}
+.h3 {
+    font-size: 2em;
+    margin-top: 0;
+
 }
 .vl {
     border-left: 6px solid rgb(154, 63, 63);
@@ -35,8 +55,8 @@ hr{
     padding: 0;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #fff;
-    border-left: 2px solid lightgray;
+    /* background-color: #fff; */
+    /* border-left: 2px solid lightgray; */
 }
 .nav>li {
     /* text-align: center;
@@ -149,14 +169,20 @@ hr{
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
   }
   
   .column {
     flex: 50%;
     display: block;
     background-color: #B5CBD9;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
   }
+  .imgright {
+    flex: 50%;
+    display: block;
+    background-color: #B5CBD9;
+    border-radius: 0px 10px 10px 0px;  }
 .button {
     border: 1px solid;
     border-radius: 10px;
