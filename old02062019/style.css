@@ -1,0 +1,301 @@
+body{
+    background-color: darkgray;
+}
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2.5px solid #f00;
+    margin: 1em 0;
+    padding: 0;
+}
+.vl {
+    border-left: 5px solid #f00;
+    height: 49px;
+    float: right;
+    margin-top: 22px;
+    margin-right: 17px;
+}
+.well {
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fff;
+    border-left: 2px solid lightgray;
+}
+.nav>li {
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 20%;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+    display: block;
+    width: 100%!important;
+}
+.navbar-collapse{
+    padding-left: 0;
+}
+.navbar{
+    margin-top: 5%;
+}
+.navbar-default {
+    /*    background-color: #1B4965;*/
+    /*    border-color: #083D77;*/
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    /*    color: #555;*/
+    /*    background-color: #62B6CB;*/
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    /*    border-color: #083D77;*/
+}
+.navbar-collapse {
+    padding-right: 0px;
+}
+.Title_Wrapper{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.Title{
+    font-weight: 800;
+    color: #ff0000;
+    text-shadow: 1px 2px 7px rgba(0,0,0,.45);
+    float: left;
+}
+.Address{
+    float: right;
+    font-weight: 800;
+    color: #ff0000;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.45);
+    margin-top: 26px;
+}
+.Phone{
+    float: right;
+    font-weight: 800;
+    color: #ff0000;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.45);
+    margin-top: 26px;
+    margin-right: 17px;
+}
+.Tagline_Home_Wrapper{
+    /*
+    max-width: 48%;
+    margin-right: 2em;
+    float: right;
+    text-align: left;
+    */
+}
+.Tagline_Home{
+    /*        font-size: 3em;*/
+}
+.Tagline_Contact{
+    font-size: 3em;
+}
+.well_bg {
+    background: url(newImages/glasses.jpeg) no-repeat;
+    background-color: #e0e4e5;
+    min-height: 730px;
+}
+.well_bg2{
+    background: url(newImages/glasses_bg.jpeg) no-repeat;
+    background-color: #e0e4e5;
+    min-height: 800px;
+}
+.contact_well {
+    background-color: rgba(145, 145, 145, 0.5);
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 15px;
+    padding-top: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2.5px 2.5px 2.5px 2.5px;
+    border-color: lightgrey;
+}
+.about_us_well {
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.about_us_tagline {
+    font-size: 4em;
+    font-weight: 600;
+}
+.about_us_pre {
+    font-size: 2em;
+    font-weight: 600;
+    width: 77%;
+    margin-bottom: 30px;
+}
+.names {
+    font-weight: 800;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.troy_name{
+
+}
+.pepper_name{
+
+}
+.bio_pic {
+    float: right;
+    margin-left: 20px;
+    margin-right: 5px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2.5px 2.5px 2.5px 2.5px;
+    border-color: lightgrey;
+}
+.troy_pic{
+
+}
+.pepper_pic{
+
+}
+.bio{
+    font-size: 1.1em;
+    min-height: 270px;
+}
+.troy_bio{
+
+}
+.pepper_bio{
+
+}
+.map_wrapper{
+
+}
+.map{
+    width: 100%;
+}
+.foot {
+    min-height: 200px;
+    margin: -6px;
+    background-color: black;
+    color: white;
+    padding-left: 35px;
+    padding-top: 45px;
+}
+.promotions_description{
+    font-size: 1.5em;
+}
+.Tagline_insurance_Wrapper{
+    width: 70%;
+    padding-left: 10px;
+}
+.image_well{
+
+}
+.insurance_image{
+
+}
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        margin-top: 6%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        margin-top: 0%;
+    }
+    .Title{
+        float: inherit
+    }
+    .Address {
+        float: inherit;
+        font-weight: 800;
+        color: #ff0000;
+        text-shadow: 1px 1px 2px rgba(0,0,0,.45);
+        margin-top: -7px;
+    }
+    .Phone {
+        float: inherit;
+        font-weight: 800;
+        color: #ff0000;
+        text-shadow: 1px 1px 2px rgba(0,0,0,.45);
+        margin-top: -15px;
+        margin-right: 17px;
+    }
+    .navbar-toggle {
+        float: unset;
+        margin-left: 5px;
+    }
+    .vl{
+        display: none;
+    }
+    .Tagline_insurance_Wrapper{
+        width: 80%;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Title{
+        float: inherit;
+    }
+    .Address {
+        float: inherit;
+        font-weight: 800;
+        color: #ff0000;
+        text-shadow: 1px 1px 2px rgba(0,0,0,.45);
+        margin-top: -7px;
+    }
+    .Phone {
+        float: inherit;
+        font-weight: 800;
+        color: #ff0000;
+        text-shadow: 1px 1px 2px rgba(0,0,0,.45);
+        margin-top: -15px;
+        margin-right: 17px;
+    }
+    .navbar {
+        margin-top: 0%;
+    }
+    .nav>li {
+        text-align: inherit;
+        position: inherit;
+        display: inherit;
+        width: auto;
+    }
+    .well_bg {
+
+        background: unset;
+        background-color: #e0e4e5;
+        min-height: 730px;
+    }
+    .about_us_tagline {
+        font-size: 2.55em;
+        font-weight: 600;
+    }
+    .about_us_pre {
+        font-size: 1.5em;
+        font-weight: 600;
+        width: unset;
+        margin-bottom: 30px;
+    }
+    .bio_pic {
+        float: unset;
+        margin-left: unset;
+    }
+    .hours_headline {
+        font-size: 1.5em; 
+    }
+    .contact_ul{
+        padding-left: 25px;
+    }
+    .Tagline_insurance_Wrapper{
+        width: 100%;
+        padding-left: 10px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .insurance_image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
