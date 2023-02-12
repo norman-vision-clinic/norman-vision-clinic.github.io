@@ -81,13 +81,31 @@ a {
     text-decoration: none;
     justify-content: center;
 }
+.nav-dropdown {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 90px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    }
 .navbar-nav {
     text-align: right;
     margin: 0;
     float: right;
     margin-top: 12px;
     display: inline-block;
-    width: 65%;
     justify-content: center;
 }
 .navbar-collapse{
@@ -96,10 +114,40 @@ a {
 .navbar{
     /*    margin-top: 8%;*/
     margin-top: 0%;
+    display: flex;
+    width: auto;
+    max-width: 1442px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+
 }
 .navbar-default {
         background-color: transparent;
         border-color: transparent;
+}
+.nav-menu-3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-family: Satoshi-medium;
+    position: relative;
+    float: right;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     /*    color: #555;*/
@@ -111,6 +159,20 @@ a {
 .navbar-collapse {
     padding-right: 0px;
 }
+.div-block-10 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
 .Title_wrapper{
     float: left;
     margin-bottom: 5px;
@@ -142,6 +204,16 @@ a {
     float: left;
     margin-bottom: 0px;
     margin-top: 0px;
+}
+.logo {
+    display: block;
+    position: relative;
+    float: left;
+    text-decoration: none;
+    width: 400px;
+    margin-right: 0;
+    object-fit: contain;
+
 }
 .Button_wrapper{
 
@@ -514,6 +586,67 @@ font-size: 3em;
     .navbar {
         margin-top: 0%;
     }
+    .nav-menu-3 {
+        max-height: 60vh;
+        margin-left: 0;
+        padding-bottom: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 auto;
+        -ms-flex: 0 auto;
+        flex: 0 auto;
+        background-color: #fff;
+        }
+    .div-block-62 {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            }
+
+            .nav-dropdown {
+                display: block;
+                margin-right: auto;
+                margin-left: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                height: 90px;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                font-size: 12px;
+                line-height: 15px;
+                font-weight: 700;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+                }
     .Title_wrapper {
         float: none;
         margin-bottom: 35px;
