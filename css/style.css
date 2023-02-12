@@ -8,7 +8,16 @@ body{
     background-color: #F0F0F2;
 }
 subbody{
+    width: auto;
     max-width: 1000px;
+}
+* {
+    font-size: 1em;
+    font-family: Satoshi-medium;
+}
+a {
+    color: #000000;
+    font-weight: 200;
 }
 .hr{
     display: block;
@@ -73,73 +82,29 @@ subbody{
     text-decoration: none;
     justify-content: center;
 }
-.nav-dropdown {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 90px;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 12px;
-    line-height: 15px;
-    font-weight: 700;
-    letter-spacing: .1em;
-    }
 .navbar-nav {
     text-align: right;
     margin: 0;
     float: right;
     margin-top: 12px;
-    display: inline-block;
-    justify-content: center;
+    display: inline;
+
 }
 .navbar-collapse{
     padding-left: 0;
 }
 .navbar{
     /*    margin-top: 8%;*/
-    margin-top: 0%;
     display: flex;
-    width: auto;
-    max-width: 1442px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 32px;
-    padding-right: 32px;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 
 }
 .navbar-default {
         background-color: transparent;
         border-color: transparent;
-}
-.nav-menu-3 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    font-family: Satoshi-medium;
-    position: relative;
-    float: right;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     /*    color: #555;*/
@@ -151,33 +116,19 @@ subbody{
 .navbar-collapse {
     padding-right: 0px;
 }
-.div-block-10 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    }
 .Title_wrapper{
     float: left;
     margin-bottom: 5px;
 }
 .Title{
     /* font-weight: 800; */
-    display: inline-block;
-    width: 22%;
+    display: flex;
+    max-width: 22%;
     min-width: 77px;
     color: #B5CBD9;
     float: left;
     margin-bottom: 0px;
-    font-size: 35px;
+    font-size: 50px;
     font-family: 'Melodrama-bold';
 }
 .Title_big{
@@ -198,13 +149,13 @@ subbody{
     margin-top: 0px;
 }
 .logo {
-    display: block;
-    position: relative;
+    width: 300px;
+    /* position: relative;
     float: left;
     text-decoration: none;
-    width: 400px;
-    margin-right: 0;
     object-fit: contain;
+    margin: auto;
+    margin-right: 5vw; */
 
 }
 .Button_wrapper{
@@ -221,7 +172,12 @@ subbody{
     padding: 16px;
     font-family: Satoshi-Black;
     font-size: 1em;
+    transition: 0.3s;
 
+}
+.buttoncontact:hover {
+    color: #8B2F26;
+    background-color: white;
 }
 .buttonlearnmore {
     margin-top: 26px;
@@ -231,11 +187,17 @@ subbody{
     border-radius: 10px;
     padding: 16px 32px;
     font-family: Satoshi-Black;
-    font-size: 1em;   
+    font-size: 1em;
+    transition: 0.3s;   
+}
+.buttonlearnmore:hover {
+    color: #B5CBD9;
+    background-color: white;
 }
 .buttoncontact2 {
     float: right;
     margin: 2%;
+    margin-top: 12px;
     color: white;
     background-color: #8B2F26;
     font-weight: 800;
@@ -244,7 +206,12 @@ subbody{
     padding: 12px;
     font-family: Satoshi-Black;
     font-size: 12px;
+    transition: 0.3s;
 
+}
+.buttoncontact2:hover {
+    color: #8B2F26;
+    background-color: white;
 }
 .row {
     display: flex;
@@ -253,16 +220,21 @@ subbody{
     margin-right: auto;
     margin-bottom: 40px;
   }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   
   .column {
-    flex: 50%;
-    display: block;
+    width: 50%;
+    float: left;
     background-color: #B5CBD9;
     border-radius: 10px 0px 0px 10px;
   }
   .column2 {
     float: left;
-    flex: 33%;
+    width: 33%;
     display: block;
     margin: 26px;
   }
@@ -272,7 +244,8 @@ subbody{
     padding: 16px;
     text-align: center;
     background-color: #B5CBD9;
-    height: 600px;
+    width: auto;
+    height: 700px;
   }
   .icon {
     width: 200px;
@@ -297,6 +270,9 @@ subbody{
 .button:hover {
     background-color: #ff0000;
     color: #fff;
+}
+.link {
+    font-family: satoshi-light;
 }
 .Break{
     margin-top: 105px;
@@ -487,6 +463,11 @@ font-size: 3em;
 .temp{
     height: 60px;
 }
+.doctible {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 #docButtonWrapper{
     margin-bottom: 10px;
     width: 100%;
@@ -537,9 +518,7 @@ font-size: 3em;
     .temp{
         display: none;
     }
-    .column {
-        width: 100%;
-    }
+
     .Break{
         margin-top: 10px;
     }
@@ -551,67 +530,6 @@ font-size: 3em;
     .navbar {
         margin-top: 0%;
     }
-    .nav-menu-3 {
-        max-height: 60vh;
-        margin-left: 0;
-        padding-bottom: 20px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-box-align: start;
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 auto;
-        -ms-flex: 0 auto;
-        flex: 0 auto;
-        background-color: #fff;
-        }
-    .div-block-62 {
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-align: start;
-            -webkit-align-items: flex-start;
-            -ms-flex-align: start;
-            align-items: flex-start;
-            display: flex;
-            -webkit-box-pack: center;
-            justify-content: center;
-            }
-
-            .nav-dropdown {
-                display: block;
-                margin-right: auto;
-                margin-left: 0;
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-                height: 90px;
-                -webkit-box-pack: justify;
-                -webkit-justify-content: space-between;
-                -ms-flex-pack: justify;
-                justify-content: space-between;
-                -webkit-box-align: center;
-                -webkit-align-items: center;
-                -ms-flex-align: center;
-                align-items: center;
-                font-size: 12px;
-                line-height: 15px;
-                font-weight: 700;
-                letter-spacing: .1em;
-                text-transform: uppercase;
-                }
     .Title_wrapper {
         float: none;
         margin-bottom: 35px;
@@ -635,12 +553,13 @@ font-size: 3em;
         margin-right: 17px;
     } */
     .navbar-toggle {
-        float: none;
+        float: right;
         margin-left: 5px;
+        
     }
 
     .nav>li {
-        width: 20%;
+        margin: auto;
     }
     .smallNavHead{
         width: 15%!important;
@@ -673,6 +592,24 @@ font-size: 3em;
     }
     .smallNavHead{
         width: 20%!important;
+        
+    }
+    .Title {
+        width: 100vw;
+    }
+    .row {
+        display: block;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .column2 {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -681,6 +618,10 @@ font-size: 3em;
     }
     .Title{
         float: inherit;
+    }
+    .logo {
+        width: 100%;
+        margin: 2%;
     }
     /* .Address {
         float: inherit;
@@ -700,12 +641,13 @@ font-size: 3em;
 
     .navbar {
         margin-top: 0%;
+        display: block;
     }
     .nav>li {
-        text-align: inherit;
+        text-align: justify;
         position: inherit;
-        display: inherit;
-        width: auto;
+        display: block;
+
     }
     .well_bg {
 
