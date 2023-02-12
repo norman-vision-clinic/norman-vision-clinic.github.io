@@ -10,6 +10,14 @@ body{
 subbody{
     max-width: 1000px;
 }
+* {
+    font-size: 1em;
+    font-family: Satoshi-medium;
+}
+a {
+    color: #000000;
+    font-weight: 200;
+}
 .hr{
     display: block;
     height: 2px;
@@ -109,13 +117,13 @@ subbody{
 }
 .Title{
     /* font-weight: 800; */
-    display: inline-block;
-    width: 22%;
+    display: flex;
+    max-width: 22%;
     min-width: 77px;
     color: #B5CBD9;
     float: left;
     margin-bottom: 0px;
-    font-size: 35px;
+    font-size: 50px;
     font-family: 'Melodrama-bold';
 }
 .Title_big{
@@ -149,7 +157,12 @@ subbody{
     padding: 16px;
     font-family: Satoshi-Black;
     font-size: 1em;
+    transition: 0.3s;
 
+}
+.buttoncontact:hover {
+    color: #8B2F26;
+    background-color: white;
 }
 .buttonlearnmore {
     margin-top: 26px;
@@ -159,7 +172,12 @@ subbody{
     border-radius: 10px;
     padding: 16px 32px;
     font-family: Satoshi-Black;
-    font-size: 1em;   
+    font-size: 1em;
+    transition: 0.3s;   
+}
+.buttonlearnmore:hover {
+    color: #B5CBD9;
+    background-color: white;
 }
 .buttoncontact2 {
     float: right;
@@ -172,7 +190,12 @@ subbody{
     padding: 12px;
     font-family: Satoshi-Black;
     font-size: 12px;
+    transition: 0.3s;
 
+}
+.buttoncontact2:hover {
+    color: #8B2F26;
+    background-color: white;
 }
 .row {
     display: flex;
@@ -181,16 +204,21 @@ subbody{
     margin-right: auto;
     margin-bottom: 40px;
   }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   
   .column {
-    flex: 50%;
-    display: block;
+    width: 50%;
+    float: left;
     background-color: #B5CBD9;
     border-radius: 10px 0px 0px 10px;
   }
   .column2 {
     float: left;
-    flex: 33%;
+    width: 33%;
     display: block;
     margin: 26px;
   }
@@ -200,7 +228,8 @@ subbody{
     padding: 16px;
     text-align: center;
     background-color: #B5CBD9;
-    height: 600px;
+    width: auto;
+    height: 700px;
   }
   .icon {
     width: 200px;
@@ -225,6 +254,9 @@ subbody{
 .button:hover {
     background-color: #ff0000;
     color: #fff;
+}
+.link {
+    font-family: satoshi-light;
 }
 .Break{
     margin-top: 105px;
@@ -415,6 +447,11 @@ font-size: 3em;
 .temp{
     height: 60px;
 }
+.doctible {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 #docButtonWrapper{
     margin-bottom: 10px;
     width: 100%;
@@ -465,9 +502,7 @@ font-size: 3em;
     .temp{
         display: none;
     }
-    .column {
-        width: 100%;
-    }
+
     .Break{
         margin-top: 10px;
     }
@@ -540,6 +575,23 @@ font-size: 3em;
     }
     .smallNavHead{
         width: 20%!important;
+    }
+    .Title {
+        width: 100vw;
+    }
+    .row {
+        display: block;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .column2 {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 600px) {
