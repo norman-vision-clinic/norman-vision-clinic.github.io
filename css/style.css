@@ -578,6 +578,20 @@ font-size: 3em;
     .norman_contact {
         margin-left: none;
     }
+    .row {
+        display: block;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .column2 {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -594,20 +608,7 @@ font-size: 3em;
     .Title {
         width: 100vw;
     }
-    .row {
-        display: block;
-    }
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        border-radius: 10px;
-    }
-    .column2 {
-        width: 100%;
-        margin: 0px;
-        margin-bottom: 20px;
-    }
+
 }
 @media only screen and (max-width: 600px) {
     #doctibleButton{
