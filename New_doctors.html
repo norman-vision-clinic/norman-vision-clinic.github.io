@@ -23,6 +23,7 @@
             });
         });
     </script>
+
     <!--    Norman    -->
     <!--    Moore    -->
 
@@ -129,6 +130,30 @@
                 </div>
             <!-- <hr> -->
 
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="grid-image">
+                    <img src="../newImages/Dr.-Troy.jpg">
+                </div>
+                <div class="grid-text">
+                    <h4 class="h2 h3 h4">Dr. Troy Flax</h4>
+                    <p>Dr. Troy Flax attended the University of Oklahoma and received his undergraduate degree at Northeastern State University in Tahlequah. He entered Northeastern State University<span id="dots">...</span><span id="more"> College of Optometry in 1989 and graduated with honors in 1993. After receiving his Doctor of Optometry degree, Dr. Flax entered the Army for a three year tour. Captain Flax was the Chief of Optometry at the Ft. McClellan Army Hospital from 1993-1995. He then returned to Norman to establish a private optometric practice. Dr. Flax became the associate of Dr. James Ryan, and eventually acquired the practice following Dr. Ryan’s retirement. The practice was moved one block south to main street where Dr. Pepper Martin joined with Dr. Flax to create Norman Vision Clinic. The 10,000 square foot comprehensive eye care clinic is a state of the art facility with six examination rooms and offers the finest ophthalmic diagnostic equipment available. There is also an on-sight optical shop with a highly trained staff and top of the line lenses and frames to complete this extensive clinic. In 2000, Dr. Flax was the proud recipient of Norman’s Optometrist of the Century award and received Optometrist of the Year every since since (except in 2004 when Dr. Martin won it!) In 2006, the clinic moved to their present location at 2501 Boardwalk. This beautiful new building contains nine exam rooms and the most current technology available to help serve his patients better. He lives in Norman with his wife, Jenny, and their four children. He has lectured to other optometrists and optometry students nationally and internationally on such topics as contact lenses, pharmaceuticals, and new technology. He has also authored articles for eye care journals. Dr. Flax is an avid fisherman and golfer who enjoys nothing more then watching the O.U Sooners play on fall Saturdays.
+                    </span>
+                    </p>
+                    <button class="buttonlearnmore" onclick="readMore()">Expand</button>
+                </div>
+
+            </div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+
+
+        </div>
+
+
+
+
             <!--taglline-->
             <div class="well">
             <div class="Tagline_Home_Wrapper">
@@ -214,7 +239,7 @@
                   <div class="card">
                     <img class="icon tall" src="glasses-icon.svg">
                     <br>
-                    <h4 class="h2 h3 h4">FRAMES AND CONTACTS</h4>
+                    <h3 class="h3">FRAMES AND CONTACTS</h3>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     <button class="buttonlearnmore">LEARN MORE</button>
 
@@ -223,7 +248,7 @@
                 <div class="column2">
                   <div class="card">
                     <img class="icon tall" src="eye-icon.svg">
-                    <<h4 class="h2 h3 h4">EYE CARE</h4>
+                    <h3 class="h3">EYE CARE</h3>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     <button class="buttonlearnmore">LEARN MORE</button>
 
@@ -232,7 +257,7 @@
                 <div class="column2">
                   <div class="card">
                     <img class="icon tall" src="perscription-icon.svg">
-                    <h4 class="h2 h3 h4">CONDITION TREATMENTS</h4>
+                    <h3 class="h3">CONDITION TREATMENTS</h3>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     <button class="buttonlearnmore">LEARN MORE</button>
 
@@ -387,6 +412,27 @@
         }
     </script>
     <!--  Email Generator test.php  -->
+    <!-- function for read more button in doctor bio -->
+    <script type="text/javascript">
+        function readMore() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        
+            </script>
+
+
 
 </body>
 
