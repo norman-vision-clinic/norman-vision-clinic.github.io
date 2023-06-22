@@ -470,6 +470,10 @@ font-size: 3em;
     margin-top: 10px;
     padding:10px; 
     min-height: 60vh;
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .servicesInfo {
     font-size: 14px;
