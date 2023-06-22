@@ -334,14 +334,16 @@ font-size: 3em;
     color: #B5CBD9;
 }
 .home_hours{
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .home_M_hours{
     float: right;
-    margin-right: 41%;
+    /* margin-right: 8%; */
 }
 .home_N_hours{
-    margin-left: 2%;
+    /* margin-left: 8%; */
 }
 .Tagline_Contact{
     font-size: 3em;
