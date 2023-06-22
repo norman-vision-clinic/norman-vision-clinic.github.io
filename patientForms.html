@@ -4,56 +4,69 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Eye, Ocular, Eye doctor, vision, sight, Norman doctor, Norman eye doctor, Moore doctor, Moore eye doctor, Noble doctor, Noble eye doctor, Blanchard doctor, Blanchard eye doctor, Purcell doctor, Purcell eye doctor, clear sight, see clearly, blurred vision, eye pain, something in my eye, see, eyesight, optometrist, ophthalmologist, eyecare, eye injury, eye trauma, viewpoint, eagle eye, perception, recognition, peepers, visual field, seeing, viewing, visibility, optical, glasses, contacts, contact lens, optics, glasses repair">
+    <meta name="keywords" content="Norman Vision Source, Norman Vision Clinic, Moore Vision Source, Moore Vision Clinic,  Eye, Ocular, Eye doctor, vision, sight, Norman doctor, Norman eye doctor, Moore doctor, Moore eye doctor, Noble doctor, Noble eye doctor, Blanchard doctor, Blanchard eye doctor, Purcell doctor, Purcell eye doctor, clear sight, see clearly, blurred vision, eye pain, something in my eye, see, eyesight, optometrist, ophthalmologist, eyecare, eye injury, eye trauma, viewpoint, eagle eye, perception, recognition, peepers, visual field, seeing, viewing, visibility, optical, glasses, contacts, contact lens, optics, glasses repair">
     <meta name="description" content="Norman Vision Clinic, schedule your appointment today.">
-    <link href="newImages/favicon.png" rel="shortcut icon" type="image/png" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" media="screen" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="newImages/favicon.png" />
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <title>Norman Vision Clinic</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="subbody">
         <div class="well">
             <div>
+                <!-- <div class="header">
                 <div class="Title_wrapper">
-                    <h1 class="Title">Norman Vision Clinic</h1>
-
-                    <div class="temp"></div>
-
-                    <h1 class="Title2">Moore Vision Clinic</h1>
+                    <h1 class="Title">Norman Vision Clinic <br></h1>
+                    <!-- <div class="temp"> <br> </div> -->
+                    <!--<h1 class="Title">Moore Vision Clinic<br></h1><br> -->
                 </div>
 
-                <div class="sep"></div>
 
-                <h4 class="Address">705 City Avenue<br /> Moore, OK 73160<br /> (405) 794-2020</h4>
+               
 
-                <div class="vl"></div>
-                <!--                    <hr class="divide">-->
-
-                <h4 class="Address">2501 Boardwalk<br /> Norman, OK 73069<br /> (405) 321-2155</h4>
-            </div>
-
-            <div class="Break"></div>
 
             <div class="Button_wrapper">
-                <a href="https://WWW.facebook.com/NormanVisionClinic/"><img class="fbImg" src="newImages/facebook-button.png" /> </a>
-                <a data-target="#myModal" data-toggle="modal" id="loadModal"> <img class="schImg" src="newImages/schedule.png" /> </a>
-            </div>
-
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="navbar-header"><button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span></button></div>
-
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <!-- <a href="https://WWW.facebook.com/NormanVisionClinic/">
+                    <img class="fbImg" src="newImages/facebook-button.png">
+                </a> -->
+            </div>   
+           
+            <nav class="navbar navbar-default " role="navigation"> 
+                <!-- <a class="logo" loading="lazy">
+                    <img class="logo" src="NVC logo.svg">
+                </a> -->
+                <div class="navbar-header">
+                 
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                </div>
+                <div class="navbar-brand">
+                    <img href="#" class="logo" src="NVC logo.svg">
+                </div>
+                <nav class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="smallNavHead"><a href="index.html">Home</a></li>
-                        <li class="active dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Online Forms</a>
+                        <li class="smallNavHead">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="smallNavHead">
+                            <a href="index.html">New Patient</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Online Forms<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Patient Forms</a></li>
+                                <li><a href="patientForms.html">Patient Forms</a></li>
                                 <li><a href="insuranceInfo.html">Insurance Information</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown smallNavHead"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services</a>
+                        <li class="dropdown smallNavHead">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="services.html#Conditions-Treated">Conditions Treated</a></li>
                                 <li><a href="services.html#Eye-Examinations">Eye Examinations</a></li>
@@ -70,14 +83,21 @@
                                 <li><a href="services.html#Glaucoma-Services-from-Your-Oklahoma-Optometrists">Glaucoma Services from Your Oklahoma Optometrists</a></li>
                             </ul>
                         </li>
-                        <li><a href="aboutUs.html">Meet Our Doctors</a></li>
-                        <li class="smallNavHead"><a href="promotions.html">Promotions</a></li>
-                        <li class="smallNavHead"><a href="contact.html">Locations</a></li>
+                        <li class=""><a href="aboutUs.html">Meet Our Doctors</a></li>
+
+        
+                        <!-- <li class="smallNavHead"><a href="promotions.html">Promotions</a></li>
+
+                        <li class="smallNavHead"><a href="contact.html">Locations</a></li> -->
                     </ul>
-                </div>
+
+                </nav>
+                <a id="loadModal" data-toggle="modal" data-target="#myModal">
+                    <button type="button" class="buttoncontact2">SCHEDULE APPOINTMENT</button></a>
                 <!-- /.navbar-collapse -->
             </nav>
-
+                </div>
+            <!-- <hr> -->
             <hr />
             <div class="well">
                 <div class="Tagline_insurance_Wrapper">
